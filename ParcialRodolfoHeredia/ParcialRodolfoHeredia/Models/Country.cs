@@ -32,7 +32,6 @@ namespace ParcialRodolfoHeredia.Models
         [Key]
         [Required]
         [Display(Name = "Ingrese abreviacion minimo 3 letras")]
-        [Range(3,3)]
         public string Alpha3code { get; set; }
 
         [Required]
@@ -45,12 +44,10 @@ namespace ParcialRodolfoHeredia.Models
         public string Name { get; set; }
 
         [Required]
-        [Range(1,10)]
         [Display(Name = "Ingrese Area")]
         public int Area { get; set; }
 
         [Required]
-        [Range(2, 3)]
         [Display(Name = "Ingrese codigo numerico del pais")]
         public int CallingCode { get; set; }
 
